@@ -15,7 +15,7 @@ export const fetchCountries = name =>
         Notiflix.Notify.info(
           'Too many matches found. Please enter a more specific name.'
         );
-      } else if (data.length >= 2 && data.length <= 10) {
+      } else if (data.length >= 2) {
         refs.countryInfo.innerHTML = '';
         refs.countryList.innerHTML = '';
         renderMarkupListCountries(data);
